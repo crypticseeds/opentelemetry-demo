@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: Apache-2.0
 name: Nightly Release
 
-on:
-  schedule:
+# Remove curly bracket if you want to set cron job
+on: {}
+  # schedule:
     # Runs at 00:00 UTC every day
-    - cron: '* * * * *'
+   # - cron: '0 0 * * *'
 
 jobs:
   build_and_push_images:
